@@ -1,0 +1,62 @@
+//Ejercicios tema 8
+
+//- Crear clase Persona.
+//- Crear variables las privadas edad, nombre y telefono de la clase Persona.
+//- Crear gets y sets de cada propiedad.
+//- Crear un objeto persona en el main.
+//- Utiliza los gets y sets para darle valores a las propiedades edad, nombre y telefono, por último muéstralas por consola.
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+       
+        Persona persona = new Persona();
+
+        persona.setEdad(20);
+        persona.setNombre("Alfred");
+        persona.setTelefono(691238490);
+
+        persona.getEdad();
+        persona.getNombre();
+        persona.getTelefono();
+
+        System.out.println(persona.getEdad());
+        System.out.println(persona.getNombre());
+        System.out.println(persona.getTelefono());
+
+
+    }
+}
+
+class Persona {
+
+    private int edad;
+    private String nombre;
+    private long telefono;
+
+    public void setEdad(int años) {
+        this.edad = años;
+    }
+
+    public void setNombre(String apellido){
+        this.nombre = apellido;
+    }
+
+    public void setTelefono(long telefonoMovil){
+        this.telefono = telefonoMovil;
+    }
+  
+
+    public String getNombre(){
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+    
+      public long getTelefono() {
+        return telefono;
+    }
+}
